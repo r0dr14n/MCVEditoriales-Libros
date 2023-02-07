@@ -112,8 +112,7 @@ private ConexionBD conexion;
 		int resultado=0;
 		
 		try {
-			consulta = con.prepareStatement("INSERT INTO libros (titulo,isbn,codEditorial,anio,num_pags,precio,cantidad"
-					+ "precioCD)"
+			consulta = con.prepareStatement("INSERT INTO libros (titulo,isbn,codEditorial,anio,num_pags,precio,cantidad,precioCD) "
 					+ " VALUES (?,?,?,?,?,?,?,?) ");
 			
 			consulta.setString(1, libro.getTitulo());

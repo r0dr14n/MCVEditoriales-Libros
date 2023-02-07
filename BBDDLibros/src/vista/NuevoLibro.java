@@ -127,12 +127,17 @@ public class NuevoLibro extends JFrame {
 		JButton btnInsertar = new JButton("Insertar");
 		btnInsertar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				insertarLibro();
 			}
 		});
 		contentPane.add(btnInsertar, "cell 9 8");
 		
 		JButton btnCancel = new JButton("Cancelar");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
 		contentPane.add(btnCancel, "cell 10 8 2 1");
 	}
 	

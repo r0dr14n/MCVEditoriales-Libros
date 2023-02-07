@@ -19,7 +19,7 @@ import java.sql.SQLException;
 public class ConexionBD {
 
 	private static final String database = "biblioteca";
-	private static final String usuario = "biblioteca";
+	private static final String usuario = "user";
 	private static final String contrasenia = "123456";
 	private static final String url="jdbc:mysql://localhost/"+database;
 	
